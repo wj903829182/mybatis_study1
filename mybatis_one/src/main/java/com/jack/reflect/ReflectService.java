@@ -23,7 +23,7 @@ public class ReflectService {
             Method method = service.getClass().getMethod("sayHello",String.class);
             //反射调用方法
             method.invoke(service, "jack");
-            System.out.println(ReflectService.class.getName());
+            System.out.println(service.getClass());
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
